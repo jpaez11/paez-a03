@@ -1,6 +1,9 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solutions
+ *  Copyright 2021 Jorge Paez
+ */
 package exercise24;
-
-import java.util.Arrays;
+import java.util.*;
 
 public class forStrings {
 
