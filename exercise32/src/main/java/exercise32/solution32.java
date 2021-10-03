@@ -50,7 +50,7 @@ public class solution32 {
         System.out.print(" \n Play again? (Y/N)");
            char choice = sca.next().charAt(0); //yes or no?
         if (choice == 'N' || choice == 'n'){
-            break;
+         break;
         }
 
             //this to close the loop
