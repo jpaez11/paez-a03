@@ -3,6 +3,8 @@
  *  Copyright 2021 Jorge Paez
  */
 package exercise33;
+import junit.framework.TestCase;
+import org.junit.jupiter.api.Test;
 import java.util.*;
 
 /*
@@ -10,24 +12,11 @@ import java.util.*;
       this program will make a magic 8ball that will give randomly
       stored answers
    */
-public class solution33 {
-  public static void main (String [] args){
-      //responses to be stored and given randomly
+public class solution33 extends TestCase {
 
-      String[] responses = {"No", "Yes", "Ask again later", "Maybe"};
-      Random rng = new Random(); //it's random innit?
-      Scanner sca = new Scanner(System.in);
+    public static void main (String [] args){
+        System.out.println("What's the question?");
+        EBall myEBall = new EBall(); //calls the EBall class
 
-      System.out.println("What is your question?");
-      String ask = sca.nextLine(); //here's the question
-
-      //here's how the options will be selection
-      int randomResponses = rng.nextInt(responses.length);
-      String result = responses[randomResponses];
-
-      //printing the responses
-      System.out.println();
-      System.out.println(result);
-      System.out.println();
   }
 }
